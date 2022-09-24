@@ -1,0 +1,4 @@
+there are two branches - main and passport
+don't merge them
+main is for bcrypt code and 
+passport is for passport(cookies) code
