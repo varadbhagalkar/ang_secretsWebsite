@@ -1,10 +1,21 @@
-//jshint esversion:6
+/*
+
+
+
+*******************************USING PASSPORT*************************************
+
+
+
+*/
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const app = express();
 const mongoose = require('mongoose');
+const session = require('express-session');
+const passport = require('passport');
+const passportLocalMongoose = require('passport-local-mongoose');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
